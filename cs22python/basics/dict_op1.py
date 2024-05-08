@@ -29,3 +29,6 @@ print(name[2:4:1])
 
 number={2,2,3,3,3,5,6,4,5,5,7,7}
 print(number)
+
+
+# Stierng operations 
