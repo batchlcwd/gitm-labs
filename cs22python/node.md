@@ -1,5 +1,6 @@
 ## Control Statements
-- if 
+
+- if
 - if ... else
 - if ...elif...elif...else
 - while
@@ -7,7 +8,6 @@
 - break
 - continue
 - pass
-
 
 ## Functions
 
@@ -24,7 +24,6 @@
 - with default parameters
 -
 
-
 # PP- Practice Programs
 
 1. WAP to check number is prime or not.
@@ -33,3 +32,33 @@
 4. WAP to print reverse of string.
 5. WAP to print reverse of string without using reverse function.
 6. WAP to print reverse of string without using reverse function and without using loop.
+
+functions and class object
+
+## Functions:
+
+- set of statements written for doing a specific task
+- function has its name
+- `def` keyword used to create functions
+- function has zero or more parameters
+- functions has its body
+- fun also return values
+- code reusability
+
+### Type of functions
+
+- Function without parameters and without return types
+- Function with parameters and with return value
+- Function with defaut parameters
+- Function with different parameter order
+- Function with variable arguments
+
+## Practice Questions
+
+1. WAP to take number and check primenumber using function.
+2. WAP to take number and print all prime numbers from 1 to 1000.
+   [use function]
+3. WAP to take number and print the factorial of number.
+4. WAP to take number and count digits using function.
+5. WAP to take number and print factorial of each digits of number.
+6. WAP to take number and print reverse of number using functions.
