@@ -39,3 +39,58 @@ Set of statements written for doing a specific task.
     Blueprint of an object from which object can be created.
 
 - it is a logical entity
+
+## Constructor
+
+- Special methods of class used to initlized objects.
+- special name
+  ```python
+  def __init__(self):
+      pass
+  ```
+
+## self keyword:
+
+self refer current invoking object.
+
+## overloding
+
+- Creating more than one method with same name in same class.
+- Python doest not supprot overloading
+
+## Inheritance
+
+- what is inheritance
+- how inhertance
+- calling constructor from child - class
+- super()
+
+- Example
+
+```python
+class Dadaji:
+    def __init__(self):
+        self.x=100
+
+
+class Papaji(Dadaji):
+    def __init__(self):
+        self.y=400
+        Dadaji.__init__(self)
+
+class Ham(Papaji):
+    def __init__(self):
+        self.z=10
+        # parent class constructor
+        Papaji.__init__(self)
+
+# dada=Dadaji()
+# papa = Papaji()
+ham=Ham()
+
+
+print(ham.x)
+print(ham.y)
+print(ham.z)
+
+```

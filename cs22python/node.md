@@ -62,3 +62,47 @@ functions and class object
 4. WAP to take number and count digits using function.
 5. WAP to take number and print factorial of each digits of number.
 6. WAP to take number and print reverse of number using functions.
+
+## Object Oriented Programming System:
+
+1. line by line:
+
+   - Code Reusablity
+   - Code Maintain karne ke issue
+   - Code issue karne ke issue..
+
+2. functions[Functional programming]
+
+   - functions bana ke karna
+   - code security
+
+3. Object Oriented Programming:
+   - class and objects
+   - style of coding
+   - code usablity
+   - code -> 500 objects
+   - inheritance
+   - encapsulation
+   - abstraction
+   - Polymorphism
+   - etc,....
+
+## Class and Objects:
+
+- blueprint of object
+- logical
+  class --> object
+
+## Object
+
+- It is real world entit.
+- properties/ data memebers / instance variables
+- behaviours / member methods / methods
+- unique identifiers[00x]
+- real entity
+
+object[student]- {
+name:'raman'
+college:'goel'
+phone:'23525'
+}
