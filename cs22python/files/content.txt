@@ -1,0 +1,5 @@
+my name is ram singh
+i live in lucknow
+i am professional java develoer
+ok
+we are learning java file handling

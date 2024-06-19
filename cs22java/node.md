@@ -97,7 +97,8 @@ conversion data loss ho raha hai
 - constructor overloading
 - Programs:
 - 1.Class which represent point
-- have basics operations 1.)find_distance of two point
+- have basics operations 
+- 1.)find_distance of two point
 - 2.)ditance from x-axis and y-axis
 - 3.)find co-ordinat of point
 - 2.class which represnt complex number

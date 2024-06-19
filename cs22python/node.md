@@ -106,3 +106,18 @@ name:'raman'
 college:'goel'
 phone:'23525'
 }
+
+## File Handling
+
+---
+
+Steps to handle/read/write files
+
+1. file open karna hai.
+
+   - mode write(w),read(r),append(a)
+   - w+, r+, a+
+
+2. perform operations -- read, write
+
+3. close the file.
