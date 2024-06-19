@@ -94,3 +94,24 @@ print(ham.y)
 print(ham.z)
 
 ```
+
+## File Handling:
+
+Performing file operations(read,write ,append) using python program. This is File Handling Concepts.
+
+### steps to do file handling.
+
+1 - Open the file .
+read(r),write(w),append(a)
+r+,w+,a+
+2 - Perform operations
+read,write,append
+3 - close the file
+close
+
+## With keyword
+
+## Task:
+
+1. Read and Write together
+2. Append mode try kariga
