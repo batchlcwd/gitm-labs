@@ -87,19 +87,92 @@ conversion data loss ho raha hai
 
 ## Class and Ojects / Object Oriented Programming System.
 
-- What is class?
-- What is Object?
-- How to create object
-- Attribute
-- Methods
-- method overloading
-- constructor
-- constructor overloading
+- What is class? ✅
+- What is Object?✅
+- How to create object✅
+- Attribute✅
+- Methods✅
+- method overloading✅
+- constructor✅
+- constructor overloading✅
 - Programs:
 - 1.Class which represent point
-- have basics operations 
+- have basics operations
 - 1.)find_distance of two point
 - 2.)ditance from x-axis and y-axis
 - 3.)find co-ordinat of point
 - 2.class which represnt complex number
 - have basics operations
+  4- Complex number
+
+## Constructor Overloading:
+
+Whenever we create more than one construtor inside classs then this is called Constructor Overloading.
+
+Conditions:
+
+- Arugument **list** must different:
+  - Number of parameters different
+  - Type of parameter different
+  - Order of parameter different
+
+## Method Overloading:
+
+Whenever we will create more than 1 method with same name and with different argument list. Then this is method overloading.
+
+- Condition of method overloading
+- method name must be same
+- argument must be different
+  - number of parameters
+  - type of parameters
+  - order of parameters
+
+### Advantages of Method Overlaoding:
+
+Compile Time Polymorphism/ static binding
+
+```java
+public class Calculator {
+
+    void add(int x, int y) {
+        System.out.println(x + y);
+    }
+
+    void add(int x, int y, int z) {
+        System.out.println(x + y + z);
+    }
+
+    void add(int x, int y, int z, int a) {
+        System.out.println(x + y + z + a);
+    }
+
+    void add(int... x) {
+        int s = 0;
+        for (int h : x) {
+            s = s + h;
+        }
+        System.out.println(s);
+    }
+}
+
+
+```
+
+Calling overloaded method
+
+```java
+public class CalcEx {
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        calculator.add(2, 3);
+        calculator.add(3, 3, 3);
+        calculator.add(4, 4, 4, 4);
+        calculator.add(5, 5, 5, 5, 5, 5);
+
+    }
+}
+
+
+```
+
+## Inheritance:
