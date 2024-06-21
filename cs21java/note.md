@@ -94,8 +94,63 @@ byte --> short
 ## Class and Ojects / Object Oriented Programming System.
 
 - What is class?
+
+  - Class is blueprint of an object.
+  - It is logical entity.
+  - properties/data members/ instance variables
+  - behaviours/ member methods / object functionality.
+
 - What is Object?
+
+  1.  Object is real world entity.
+  2.  object has some Properties / instance variabels
+  3.  and Behaviours / member methods / methods
+  4.  unique indentifer
+
+  example: 1. bike- object
+  properties / variables / data memeber
+  (headlight, wheel, mirror, tyres)
+  ---
+  behavours/ methods / functionaliy
+  (light throw karna,
+  chalna,
+  back side dekhna) 2. mobile phone[iphone 13 pro max]
+  properties:
+  camera, screen, color, speaker,
+  behaviours
+  photo click,
+  video dekhna,
+  audio sunna. 3. DOG,CAT,HUMAN
+  properties,
+  hand,eyes,nose,legs etc..
+  behaviours
+  eating, speaking, talking, walking, studying, etc. 4. laptop
+  propeties
+  color, shape, screen,speaker,battery etc...
+  behaviours
+  long lasting,
+  gamming,
+  music,
+  recording videos,
+  recording songs,
+  internet surfing
+
+- How we can create objects.:
+
+  - Want class
+
 - How to create object
+
+usecase:  
+ hame ek object banana , wo object aman(student) ka -->
+properties
+name=aman,phone,address,rollnumber,college,
+methods
+showCollegeName()
+showDetail()
+
+1. Create student class so that we can create object from that class.
+
 - Attribute
 - Methods
 - method overloading
