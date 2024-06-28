@@ -116,7 +116,7 @@ Conditions:
   - Type of parameter different
   - Order of parameter different
 
-## Method Overloading:
+## Method Overloading- compile time polymorphism
 
 Whenever we will create more than 1 method with same name and with different argument list. Then this is method overloading.
 
@@ -176,3 +176,98 @@ public class CalcEx {
 ```
 
 ## Inheritance:
+
+Aquiring the properites and behavours of parent class by the child class.
+
+- The class which provides the properties is called **parent class/super class/base class**
+
+- the class which takes the properites is called **child class/sub class/ derived class**
+
+## Overriding - Runtime poloymorphism
+
+Whenever child class is not satisfied with parent class method body[behaviour] then child class redefines the body of the method. this whole process is overriding.
+
+### Condition of overriding
+
+1. There must be parent child relationship.
+2. method name must be same.
+3. argument list must be same.
+4. return type must be coverient
+
+   - same
+   - Animal >>> Animal--> Dogs,Cats
+
+5. child class method must be more or same accessible then parent class method.
+
+```java
+public > protected > default > private
+```
+
+## Final keyword
+
+1. Final class can not be inherited
+
+```java
+final class ABC{
+
+}
+```
+
+2. Final method can not be overrided
+
+```java
+final class ABC{
+final public void method(){
+
+}
+}
+```
+
+3. Final variables can not be changed
+
+```java
+final int x=45;
+```
+
+## Polymorphism ✅
+
+    - Compile Time / static binding/ overloading
+    - Run Time / dynamic binding / overriding
+
+## Encapsulation✅
+
+Wrapping up of data members and member methods in single unit classname is called Encapsulation.
+
+```java
+class Encap {
+
+    private int age = 56;
+private String rollNumber="";
+
+    // setters and getters
+
+    public String getRollNumber(){
+        return this.rollNUmber;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        if (age <= 18) {
+            System.out.println("Invalid Age ");
+            throw new RuntimeException("Invalid Age");
+        }
+        this.age = age;
+    }
+
+}
+
+
+```
+
+- **Getter** is used to get the private variables.
+- **Setter** is used to set the private variables.
+
+## Abstraction
