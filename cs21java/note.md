@@ -110,7 +110,9 @@ byte --> short
   example: 1. bike- object
   properties / variables / data memeber
   (headlight, wheel, mirror, tyres)
-  ---
+
+  ***
+
   behavours/ methods / functionaliy
   (light throw karna,
   chalna,
@@ -163,3 +165,150 @@ showDetail()
 - 3.)find co-ordinat of point
 - 2.class which represnt complex number
 - have basics operations
+
+### CLASS AND OBJECT ✅
+
+### THIS ✅
+
+- Remove naming confliction
+- this refers to current invoking object
+
+### REFRENCE VARIABLES
+
+### OBJECT PASSING
+
+### WITH EXAMPLE
+
+```java
+class Point {
+
+    // instance variables
+    int x;
+    int y;
+
+    // public static final double PIE_VALUE=3.146;
+
+    // constructor
+    // it does not return any value not even void
+    // constructor name must be equal to classname
+    // automatically call -- object creation time
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+        System.out.println("Object Created");
+    }
+
+    // methods
+    public void display() {
+        System.out.println("( " + x + " , " + y + " )");
+
+    }
+    // distance method-->
+
+    public double calculateDistance(Point p2) {
+        Point p1 = this;
+
+        double xTemp = Math.pow((p1.x - p2.x), 2);
+        double yTemp = Math.pow((p1.y - p2.y), 2);
+        double xYAdd = xTemp + yTemp;
+        double answer = Math.sqrt(xYAdd);
+        // System.out.println("Distance " + String.format("%,.2f", answer));
+        return answer;
+
+        // this
+        // p1 and p2
+        // distance cal
+        // print
+    }
+
+    // midpoint method-->
+    public Point calculateMidPoint(Point p2) {
+
+        Point p1 = this;
+
+        int xMid = (p1.x + p2.x) / 2;
+        int yMid = (p1.y + p2.y) / 2;
+
+        Point midPint = new Point(xMid, yMid);
+        return midPint;
+
+    }
+
+}
+
+
+```
+
+main calling program
+
+```java
+class PointExample {
+    public static void main(String[] args) {
+        // 1st approch
+        // int x1=45;
+        // int y1=34;
+
+        // int x2=45;
+        // int y2=45;
+
+        // 100
+
+        // 2 approch
+        // Data types--> class
+        int x = 45;
+        Point p1 = new Point(45, 34);
+        // p1.x = 45;
+        // p1.y = 34;
+        p1.display();
+
+        Point p2 = new Point(33, 11);
+        // p2.x = 33;
+        // p2.y = 11;
+
+        p2.display();
+
+        Point p3 = new Point(2, 4);
+        Point p4 = new Point(20, 4);
+        Point p5 = new Point(200, 4);
+        Point p6 = new Point(2000, 4);
+        Point p7 = new Point(21, 4);
+        Point p8 = new Point(223, 4);
+        p3.display();
+        p4.display();
+        p5.display();
+        p6.display();
+        p7.display();
+        p8.display();
+
+        double dis = p1.calculateDistance(p2);
+        System.out.println("Distance : " + dis);
+
+        // p6.calculateDistance(p7);
+
+        double dis2 = p4.calculateDistance(p5);
+        System.out.println("Distance " + dis2);
+
+        Point p100 = new Point(10, 20);
+        Point p101 = new Point(5, 10);
+
+        p100.display();
+        p101.display();
+        Point midPoint = p100.calculateMidPoint(p101);
+        midPoint.display();
+
+        Point mPoint2 = midPoint.calculateMidPoint(p101);
+        mPoint2.display();
+
+    }
+}
+
+```
+
+### Practice Programs
+
+WAP to define two complex number andn perform different operations
+
+1. Add complex numbers
+2. Substract complex numbers
+3. Multiply complex numbers
