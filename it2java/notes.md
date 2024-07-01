@@ -123,7 +123,60 @@ ob.ramu(200)
 
 - Constructor overloading
 - mehtod overloading
+
+- Conditions for overloading:
+
 - method
 - inheritance
+
 - method overriding
 - super keyword.
+
+## Overriding
+
+## Conditions for Overriding
+
+1. Parent Chlid Relationship important for overriding
+2. method name must be same.
+3. arguments must be same.
+4. child class visibility can be reduced.
+
+```java
+public > protected > default > private
+
+```
+
+5. Return type: covarient
+1. same
+1. parent child relation to
+   child ko chlld class mein use kar sakte.
+
+### Overriding leads to runtime polymorphism
+
+### Final Keyword
+
+1. final variable can not updated.`
+
+2. final class can not inherited.
+
+3. final method can not overrided.
+
+Number
+
+Integer extends
+
+Double extends
+
+Exception
+
+RuntimeException extends
+
+---
+
+1. vs code❌
+2. IntelliJ IDEA/Eclipse/Netbeans ✅
+
+- Ultimate- Paid
+- Community- Free
+
+3. BlueJ❌
